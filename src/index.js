@@ -1,28 +1,10 @@
-import "dotenv/config";
-import cors from "cors";
-import express from "express";
-
-const app = express();
-app.use(cors());
-
-app.get("/users", (req, res) => {
-  return res.send("GET HTTP method on user resource");
-});
-
-app.post("/users", (req, res) => {
-  return res.send("POST HTTP method on user resource");
-});
-
-app.put('/users/:userId', (req, res) => {
-    return res.send(
-      `PUT HTTP method on user/${req.params.userId} resource`,
-    );
-  });
-  
+console.log('Webpack Project 2');
 
 
-app.delete("/users", (req, res) => {
-  return res.send("DELETE HTTP method on user resource");
-});
+const myFunc = () => {
+    const paragraph = document.querySelector('h1');
+	paragraph.textContent = 'This text has changed because you clicked the button.';
+}
 
-app.listen(process.env.PORT, () => console.log("Listening on port 3000"));
+
+}

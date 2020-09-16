@@ -1,8 +1,9 @@
-export var myFunc = () => console.log("myFunc") 
+export const myFunc = () => console.log('myFunc');
 
-export const myFunc2 = function() { console.log("myFunc2")}
+export const myFunc2 = () => {
+  console.log('myFunc2');
+};
 
-export var notHoisted = function() {
-    console.log('bar');
- };
-
+export const notHoisted = () => {
+  console.log('bar');
+};
